@@ -1,11 +1,18 @@
-#bg { background-color : MidnightBlue ; }	
+#bg { background-color : black ; }	
 
 #bg {
   text-align: center;
+  color : LemonChiffon;
   }
   
  h1 {
- 	font-size : 100px; 
+ 	font-size : 100px;
+ 	text-transform: uppercase;
+  	font-family: 'Gambetta', serif;
+  	letter-spacing: -3px;
+ 	transition: 700ms ease;
+  	font-variation-settings: "wght" 311;
+	margin-bottom: 0.8rem; 
  }
 
 p {
