@@ -1,8 +1,18 @@
 <html>
+<link rel="stylesheet" type="text/css" href="/Static/fortuneCss.css">
+<div class="overlay"></div>
 
-<h1> Your Fortune is {{TheFortune}}</h1>
-
-
+<div class="text">
+	{%for letter in TheFortune%}
+		{%if letter != space%}
+			<div class="wrapper">
+				<div id="L" class="letter">{{letter}}</div>
+				<div class="shadow">{{letter}}</div>
+			</div>
+		{%else%}
+			&nbsp;
+		{%endif%}
+	{%endfor%}
 
 
 

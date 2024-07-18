@@ -17,7 +17,7 @@ def fortune():
 "a new friendship will bring joy and laughter.",
 "travel is in your future, opening new horizons.",
 "Abdalla is going to chase you around IASA.",
-"trust your instincts; they will guide you wisely.",
+"trust your instincts- they will guide you wisely.",
 "a long-awaited dream will finally come true.",
 "good fortune will follow you wherever you go.",
 "an old problem will find a surprising resolution."]
@@ -25,7 +25,7 @@ def fortune():
 	TheFortune = random.choice(fortunes)
 	
 
-	return render_template('fortune.html', TheFortune = TheFortune)
+	return render_template('fortune.html', TheFortune = TheFortune, space =" ")
 
 
 
