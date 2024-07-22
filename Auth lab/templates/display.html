@@ -3,6 +3,12 @@
 	<title>Your amazing quotes</title>
 </head>
 <body>
-<p>{{allQuotes}}</p>
+<p>{%for i in allQuotes%}
+
+quote:{{allQuotes[i]['quote']}}
+who:{{allQuotes[i]['who']}}
+
+{%endfor%}
+</p>
 </body>
 </html>
