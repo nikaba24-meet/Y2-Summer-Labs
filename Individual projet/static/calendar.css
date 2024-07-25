@@ -1,0 +1,70 @@
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #c1f7f5; /* Solid cyan color */
+}
+
+.calendar {
+  position: relative;
+  width: 300px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calendar__picture {
+  position: relative;
+  height: 200px;
+  padding: 20px;
+  color: #fff;
+  background: #c1f7f5; /* Matching the body background color */
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.calendar__date {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+
+.calendar__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.calendar__day:nth-child(7) {
+  color: #dc96ff; /* Updated weekend color */
+}
+
+.calendar__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  color: #262626;
+}
+
+.calendar__number:nth-child(7n) {
+  color: #dc96ff; /* Updated weekend color */
+  font-weight: 700;
+}
+
+.calendar__number:hover {
+  background-color: #dc96ff; /* Updated hover background color */
+  color: #fff !important;
+  font-weight: 700;
+  cursor: pointer;
+}

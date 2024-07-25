@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../static/todayNav.css">
+</head>
+<body>
+	<!-- Navigation bar -->
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li><a href="/yesterday">Yesturday</a></li>
+      <li class="center"><a href="/tomorrow">Tomorrow</a></li>
+      </ul>
+  </div>
+
+<!--Today already -->
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<h1>Today you logged:</h1>
+<br>
+<h4>Mood: {{umood}}</h4>
+<br>
+<h4>Hobbies: {{uhobbies}}</h4>
+<br>
+<h4>Other: {{uother}}</h4>
+<br>
+<button onclick ="window.location.href = '/signout' ;">Sign out</button>
+</body>
+</html>

@@ -1,34 +1,66 @@
-<html> 
-<!-- add the menu on top -->
-<form method="POST" action="/today">
-<h1>How was your day? ☼ </h1>
-<h4><label> Mood /ᐠ > ˕ <マ ₊˚⊹♡</label></h4>
-<input type="radio" name = "mood" id="happy" value="happy"> 
-<label for = "happy">Happy</label>
-<input type="radio" name = "mood" id= "energetic"value="energetic"> 
-<label for = "happy">Energetic</label>
-<input type="radio" name = "mood" id = "sad" value="sad"> 
-<label for = "happy">Sad</label>
-<br> 
-<h4><label>Hobbies: (｡ᴖ ⤙ ᴖ)</label></h4>
-<input type="radio" name = "hobbies" id = "gym" value="gym"> 
-<label for = "happy">Gym</label>
-<input type="radio" name = "hobbies" id = "painting" value="painting"> 
-<label for = "happy">Painting</label>
-<input type="radio" name = "hobbies" id = "football" value="football"> 
-<label for = "happy">Football</label>
-<input type="radio" name = "hobbies" id = "none" value="none"> 
-<label for = "happy">None</label>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../static/todayNav.css">
+  <script src="todayJs.js"></script>
+  </head>
+<body>
+  <!-- Navigation bar -->
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li><a href="/yesterday">Yesturday</a></li>
+      <li class="center"><a href="/tomorrow">Tomorrow</a></li>
+     </ul>
+  </div>
+
+  <!-- Mood login -->
+  <div class="form-container">
+    <form method="POST" action="/today">
+      <h1>How was your day? ☼ </h1>
+      <div class="form-group">
+        <h4><label>Mood /ᐠ > ˕ <マ ₊˚⊹♡</label></h4>
+        <div class="radio-group">
+          <input type="radio" name="mood" id="happy" value="happy" required>
+          <label for="happy">Happy</label>
+          <input type="radio" name="mood" id="energetic" value="energetic">
+          <label for="energetic">Energetic</label>
+          <input type="radio" name="mood" id="sad" value="sad">
+          <label for="sad">Sad</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <h4><label>Hobbies: (｡ᴖ ⤙ ᴖ)</label></h4>
+        <div class="radio-group">
+          <input type="radio" name="hobbies" id="gym" value="gym" required>
+          <label for="gym">Gym</label>
+          <input type="radio" name="hobbies" id="painting" value="painting">
+          <label for="painting">Painting</label>
+          <input type="radio" name="hobbies" id="football" value="football">
+          <label for="football">Football</label>
+          <input type="radio" name="hobbies" id="none" value="none">
+          <label for="none">None</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <h4><label>Other: ₊ ⊹</label></h4>
+        <div class="radio-group">
+          <input type="radio" name="other" id="travel" value="travel" required>
+          <label for="travel">Travel</label>
+          <input type="radio" name="other" id="disease" value="disease">
+          <label for="disease">Disease/Injury</label>
+          <input type="radio" name="other" id="journaling" value="journaling">
+          <label for="journaling">Journaling</label>
+          <input type="radio" name="other" id="none" value="none">
+          <label for="none">None</label>
+        </div>
+      </div>
+      <button type="submit" placeholder="submit">That's it ՞ ⸝⸝> ̫ <⸝⸝ ՞⸜ ♡ </button>
+    </form>
+  </div>
 <br>
-<h4><label>Other: ₊ ⊹</label></h4>
-<input type="radio" name = "other" id = "travel" value="travel">
-<label for = "happy">Travel</label>
-<input type="radio" name = "other" id = "disease" value="disease"> 
-<label for = "disease">Disease/Injury</label>
-<input type="radio" name = "other" id = "journaling" value="journaling">
-<label for = "happy">Journaling</label>
-<input type="radio" name = "other" id = "none" value="none"> 
-<label for = "happy">None</label>
-<br> 
-</form>
+<button onclick ="window.location.href = '/signout' ;">Sign out</button>
+
+</body>
 </html>

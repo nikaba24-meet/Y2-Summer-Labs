@@ -1,24 +1,35 @@
-<html>
-
-
-<h1> Sign up ❀</h1>
-<form method ='POST' action='/signup'> 
-	<label>  ֶָ֢   Email adress: *</label>
-	<br>
-	<input type="email"  name="email" required>
-	<br>
-	<label>  ֶָ֢  Username: </label>
-	<br>
-	<input type="text"  name="username" required>
-	<br>
-	<label>  ֶָ֢   Password: * (6 characters at least)</label>
-	<br>
-	<input type="password"  name="password" minlength="6" required>
-	<br>
-	<input type="submit" placeholder="submit">
-</form>
-
-<a href = '/'><h5>Have an account? go here ˃ᴗ˂ </h5></a>
-
-
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="../static/signin.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Signup ❀
+         </div>
+         <form method="POST" action="/signup">
+            <div class="field">
+               <input type="email" name = "email" required>
+               <label>ּ ֶָ֢.Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password" name = 'password' minlength="6" required>
+               <label>ּ ֶָ֢.Password</label>
+            </div>
+            <div class="content">
+               <div class="checkbox">
+               </div>
+               <div class="pass-link">
+               </div>
+            </div>
+            <div class="field">
+               <input type="submit" value="Signup">
+            </div>
+            <div class="signup-link">
+               A member? <a href="/">Signin now ˃ᴗ˂  </a>
+            </div>
+         </form>
+      </div>
+   </body>
 </html>

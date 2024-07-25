@@ -1,0 +1,26 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../static/yesterday.css">
+</head>
+<body>
+<!--nav bar -->
+<div class="nav-container">
+    <ul class="nav-links">
+      <li><a href="/yesterday">Yesturday</a></li>
+      <li class="center"><a href="/tomorrow">Tomorrow</a></li>
+      <li class="upward"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+      <li class="forward"><a href="/calendar">This month</a></li>
+    </ul>
+  </div>
+<!--Log --> 
+<h1>Yesterday you logged:</h1>
+<br>
+<h4>Mood: {{umood}}</h4>
+<br>
+<h4>Hobbies: {{uhobbies}}</h4>
+<br>
+<h4>Other: {{uother}}</h4>
+<br>
+<button onclick ="window.location.href = '/signout' ;">Sign out</button>
+</body>
+</html>
